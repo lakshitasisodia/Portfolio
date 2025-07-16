@@ -1,0 +1,91 @@
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Container setup */
+main {
+  display: flex;
+  padding: 20px 5%;
+  height: calc(100vh - 120px); /* Adjust for fixed nav height */
+  overflow: hidden; /* Main never scrolls */
+}
+
+/* Project Holder (scrollable) */
+.project-section-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  box-sizing: border-box;
+
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+
+  padding-top: 130px;
+  padding-bottom: 160px;
+}
+
+/* Project Item */
+.project-section-holder .project-section-holder-item {
+  min-height: 250px;
+  width: 90%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+
+  /* animation */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUpFade 0.8s ease forwards;
+  animation-delay: calc(var(--i) * 0.1s);
+
+  /* transition on hover */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.project-section-holder .project-section-holder-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+}
+
+/* Heading section */
+.project-section-holder-item-heading {
+  height: 90%;
+  padding-right: 10px;
+  border-right: 2px solid white;
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+
+/* Description section */
+.project-section-holder-item-description {
+  height: 90%;
+  text-align: left;
+  padding: 30px;
+  width: 70%;
+}
+
+/* Slide animation */
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

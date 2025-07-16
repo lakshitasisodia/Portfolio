@@ -1,0 +1,84 @@
+[
+  {
+  "id": "kendra_ai",
+  "title": "🎙️ Kendra - Voice Assistant",
+  "type": "big",
+  "short_description": "Voice-activated Python assistant for web tasks, math queries, and TTS interaction.",
+  "long_description": "## 🎙️ Kendra - Voice Assistant\n\n**Kendra** is a lightweight voice-controlled assistant built with Python. It can perform basic web browsing tasks, answer simple math queries, and communicate with the user through text-to-speech interaction.\n\n> ⚠️ This is a **private repository** intended for personal or educational use.\n\n---\n\n## 🧠 Features\n\n* 🎧 Listens for a wake word: **\"Kendra\"**\n* 🌐 Opens websites via voice commands (e.g., \"open YouTube\")\n* ➕ Handles basic math operations (e.g., \"what is 5 plus 3\")\n* 💬 Provides help and graceful error handling\n* 🗣️ Uses text-to-speech for responses\n\n---\n\n## 🛠️ Tech Stack\n\n* `speech_recognition` – for capturing and interpreting voice input\n* `pyttsx3` – for text-to-speech output\n* `webbrowser` – to launch URLs\n* `re` and `operator` – for processing math expressions\n\n---\n\n## ▶️ How to Run\n\n```bash\npython kendra.py\n```\n\nUse the wake word **\"Kendra\"** followed by your command:\n\n* `Kendra, open google`\n* `Kendra, calculate ten divided by two`\n* `Kendra, help`\n\n---\n\n## 📌 Notes\n\n* Make sure your microphone is enabled and accessible.\n* The assistant has a timeout after 5 seconds of silence.\n* Wake word detection is done using basic keyword matching (`\"kendra\"` in recognized speech).\n\n---\n\n## 🔒 Privacy\n\nThis assistant processes voice commands locally and does **not** send any data externally. It uses the Google Speech API **only** for speech-to-text transcription.\n\n---\n\n## 🙋‍♀️ Acknowledgments\n\n* Built with ❤️ by **Lakshita**\n* Thanks to the open-source Python community",
+  "technologies": ["Python", "speech_recognition", "pyttsx3", "webbrowser", "re", "operator"]
+},
+{
+  "id": "botblink_chat_ui",
+  "title": "🎶 BotBlink",
+  "type": "big",
+  "short_description": "Interactive toggle-based chatbot UI built with HTML, CSS, and JavaScript.",
+  "long_description": "💬 **BotBlink** is a sleek chatbot widget with toggle functionality, built for modern websites. It features icon switching, responsive layout, and smooth animations.\n\n### 🚀 Features\n- Toggle button with icon switch (💬 → ❌)\n- Chatbot opens/closes with animation\n- Mobile-friendly and fully responsive\n- Clean UI with minimal dependencies\n- Uses Google Material Symbols\n\n### 🛠️ Tech Stack\n- HTML5\n- CSS3\n- JavaScript (Vanilla)\n- Google Material Symbols\n\n### 📁 Project Structure\n```\n📦 chatbot-toggle-ui\n├── index.html          # Main HTML structure\n├── style.css           # Custom chatbot styling\n├── utility.css         # Shared utility styles (optional)\n├── script.js           # Toggle logic (chatbot open/close)\n└── README.md           # Project documentation\n```\n\n### 📲 How It Works\n- Toggle icon starts as 💬\n- On click, chatbot opens and icon becomes ❌\n- Chatbot can be closed from header or toggle again\n- Input box accepts text (no backend connection yet)\n\nCrafted with 💜 by **Lakshita Sisodia** — for clean UI practice, learning, and interactive fun ✨",
+  "technologies": ["HTML", "CSS", "JavaScript", "Material Symbols"]
+},
+  {
+  "id": "demi_otp_generator",
+  "title": "🔐 Demi OTP Generator",
+  "type": "project",
+  "short_description": "A simple tool to generate and validate OTPs for user verification.",
+  "long_description": "",
+  "technologies": []
+},
+{
+  "id": "food_ordering_app",
+  "title": "🍽️ Food Ordering App",
+  "type": "big",
+  "short_description": "A complete frontend food ordering website with cart, history, favourites & local storage.",
+  "long_description": "🍽️ **Food Ordering App** is a sleek, fully functional food ordering website built using HTML, CSS, and JavaScript. It's my largest solo project yet — completed over 3 weeks, covering everything from wireframes to polished frontend logic with persistence using localStorage.\n\n---\n\n## 🚀 Features\n\n- 🛒 Add to Cart with Quantity Management  \n- ❤️ Add Orders to Favourites  \n- 🔁 Reorder from History or Favourites  \n- 📦 Order History Tracking  \n- 📋 Place Orders with Form Validation  \n- 📍 Save Delivery Details  \n- 💳 Multiple Payment Method Selection  \n- 🪑 Table Booking with Live Modal  \n- 🖼️ Image Gallery with Smooth Scrolling  \n- 🔐 All data stored using **Local Storage API**  \n\n---\n\n## 💻 Tech Stack\n\n- HTML5  \n- CSS3  \n- JavaScript (Vanilla)  \n- LocalStorage API  \n\n---\n\n## 📂 Project Structure\n\n```bash\n📦 food-ordering-app/\n├── index.html\n├── /html/\n│   ├── cart.html\n│   ├── favourites.html\n│   └── orderHistory.html\n├── /images/\n│   ├── food/\n│   └── restaurants/\n├── /poster/\n├── script.js\n└── styles.css\n```\n\n---\n\n## 🧠 What I Learned\n\n- Structuring multi-page websites effectively  \n- Using localStorage for persistent data  \n- Creating dynamic components (modals, forms, cart)  \n- Handling frontend data flow like a mini backend  \n- DOM manipulation & clean UI logic\n\n---\n\n## 🔮 Future Enhancements\n\n- Integrate with backend (Node.js + MongoDB)  \n- Add user login and authentication  \n- Apply responsive design for mobile  \n- Animate transitions and UI feedback\n\n---\n\n## 🙋‍♀️ About Me\n\nHi, I'm **Lakshita Sisodia** — a passionate web developer & designer crafting user-focused, clean UIs.\n\n- 💼 [LinkedIn](https://www.linkedin.com/in/lakshita-singh-sisodia-796266290)  \n- 💻 [GitHub](https://github.com/lakshitasisodia)\n\n---\n\n## ⭐ Show Your Support\n\n- ⭐ Star the repo on GitHub  \n- 🗣 Share your thoughts via [issues](https://github.com/lakshitasisodia/food-ordering-app/issues)  \n- 🍕 Fork and experiment with it\n\n**Thanks for visiting! Happy Ordering!**",
+  "technologies": ["HTML5", "CSS3", "JavaScript", "LocalStorage API"]
+},
+{
+  "id": "ai_image_generator",
+  "title": "🖼️ AI Image Generator",
+  "type": "big",
+  "short_description": "Simple AI-powered tool to generate images from text prompts.",
+  "long_description": "",
+  "technologies": ["HTML", "CSS", "JavaScript", "OpenAI API"]
+},
+{
+  "id": "booky_maker",
+  "title": "🔖 Booky Maker-Bookmark Manager",
+  "type": "project",
+  "short_description": "Minimal web app to save, view, and delete bookmarks with LocalStorage support.",
+  "long_description": "🔖 **Booky Maker** is a sleek and responsive Bookmark Manager that lets you add, view, and delete your favorite links. Designed for speed and simplicity, it uses local storage to persist data and Google’s Favicon API for a clean UI.\n\n### 🚀 Features\n- ✅ Add bookmarks with custom names\n- ✅ Delete bookmarks with one click\n- ✅ Auto-fetch website favicons\n- ✅ Responsive across devices\n- ✅ Floating add button for easy access\n- ✅ Lightweight UI with accessible design\n- ✅ Data persists using browser LocalStorage\n\n### 🛠️ Tech Stack\n- **Frontend:** HTML, CSS (with utility classes), JavaScript (Vanilla)\n- **Storage:** LocalStorage\n- **API:** Google Favicon Fetch API\n\n### 📁 Project Structure\n```\n📦 Booky-Maker\n├── 📄 index.html          # Main structure\n├── 🎨 style.css           # Styling & responsiveness\n├── 📁 utility.css         # Reusable utility classes\n├── 🧠 app.js              # Core logic and interactivity\n├── 📁 assets/             # Icons, previews, or screenshots\n└── 📄 README.md\n```\n\n### 📲 How to Use\n1️⃣ Click the ➕ floating button  \n2️⃣ Enter the bookmark name and URL  \n3️⃣ Hit 'Save' — it appears instantly!  \n4️⃣ Delete with ❌ whenever needed  \n5️⃣ Bookmarks remain saved via local storage\n\n👩‍💻 Created by **Lakshita Sisodia** — for productivity, minimalism, and aesthetic joy ✨",
+  "technologies": ["HTML", "CSS", "JavaScript", "LocalStorage", "Google Favicon API"]
+},
+{
+  "id": "trackit_expense_tracker",
+  "title": "💰 TrackIt - Expense Tracker",
+  "type": "project",
+  "short_description": "Simple web app to track expenses, income, and balance in real-time using LocalStorage.",
+  "long_description": "💰 **TrackIt** is a minimal and sleek Expense Tracker built using HTML, CSS, and JavaScript. It allows users to manage their daily finances by adding income and expenses, visualizing transactions, and maintaining persistent history through LocalStorage.\n\n### 🚀 Features\n- ✅ Real-time balance tracking\n- ✅ Visual transaction history with color codes\n- ✅ Add Income and Expenses with two-click flow\n- ✅ Persistent data using browser LocalStorage\n- ✅ Mobile responsive design\n- ✅ Reset all entries in one click\n\n### 🛠️ Tech Stack\n- **Frontend:** HTML5, CSS3 (Responsive Layout), JavaScript (ES6+)\n- **Data Storage:** LocalStorage\n\n### 📁 Project Structure\n```\n📦 TrackIt-Expense-Tracker\n├── 📄 index.html        # App UI\n├── 📄 style.css         # Visual styles\n├── 📄 utility.css       # Reusable utility classes\n├── 📄 script.js         # Core functionality\n└── 📄 README.md\n```\n\n### 🎯 How to Use\n1️⃣ Enter a reason and amount  \n2️⃣ Click \"Add Money\" or \"Expense\" to update your balance  \n3️⃣ Your history updates dynamically  \n4️⃣ Use \"Reset All\" to clear data when needed\n\n✅ All data is stored locally — safe across sessions\n\n👩‍💻 Created by **Lakshita Sisodia** — focused on simplicity, clean UI, and self-tracking ✨",
+  "technologies": ["HTML", "CSS", "JavaScript", "LocalStorage"]
+},
+{
+  "id": "alarmy_for_laptop",
+  "title": "⚡ Alarmy for Laptop",
+  "type": "project",
+  "short_description": "A productivity web app with timer, stopwatch, notes, and world clock — perfect for deep work.",
+  "long_description": "⚡ **Alarmy for Laptop** is a minimalistic productivity web app designed to help users manage time, focus deeply, and organize tasks in one beautiful interface. Built using HTML, CSS, and JavaScript, it’s lightweight, fast, and responsive across all screens.\n\n### 🚀 Features\n- ✅ Custom Timer & Focus Sessions\n- ✅ Stopwatch for task timing\n- ✅ World Clock with time zones\n- ✅ Notes section for quick tasks & thoughts\n- ✅ Add Timer Modal with smooth transitions\n- ✅ Responsive UI for all device sizes\n- ✅ Utility-first CSS styling and animations\n\n### 🛠️ Tech Stack\n- **Frontend:** HTML5, CSS3 (Utility Classes, Flexbox, Grid), JavaScript (ES6+)\n- **Editor:** Visual Studio Code\n- **Styling Add-ons:** Animations, Modular Structure, Custom Scrollbar\n\n### 📁 Project Structure\n```\n📦 Timer-of-Alarmy\n├── 📂 assets           # Fonts, icons, images\n├── 📂 css              # Stylesheets\n├── 📂 js               # JavaScript modules\n├── 📄 index.html       # Main entry\n└── 📄 README.md        # Documentation\n```\n\n### 🎯 How to Use\n1️⃣ Click \"Add Timer\" to create a custom timer  \n2️⃣ Use Focus Sessions for deep work  \n3️⃣ Track activity with Stopwatch  \n4️⃣ Take Notes with minimal UI  \n5️⃣ Check global time with World Clock\n\n### 🧪 Known Issues\n- 🔸 Note autosave not available yet (planned)  \n- 🔸 Animation glitch on some mobiles being optimized  \n- 🔸 Limited world cities (expansion coming soon)\n\n🌟 Built with ❤️ by **Lakshita Sisodia** — made for clarity, focus, and a clean productivity experience.",
+  "technologies": ["HTML", "CSS", "JavaScript", "Flexbox", "Grid", "LocalStorage"]
+},
+{
+  "id": "quizer_quiz_platform",
+  "title": "🎓 Quizer – A Quiz Platform",
+  "type": "project",
+  "short_description": "An interactive quiz app with live scoring, answer validation, and dynamic question sets.",
+  "long_description": "🎓 **Quizer – A Quiz Platform** is a sleek, intuitive quiz web app designed to deliver an engaging assessment experience. Built using HTML, CSS, and vanilla JavaScript, the app dynamically fetches questions, validates answers in real time, and gives instant scoring feedback.\n\n### 🚀 Features\n- ✅ Randomly fetches 15 questions from a JSON dataset\n- ✅ Live validation: Green for correct, red for incorrect answers\n- ✅ Final score display at quiz completion\n- ✅ Fully responsive interface across devices\n- ✅ Simple, user-friendly quiz UI for smooth interaction\n\n### 🛠️ Tech Stack\n- **Frontend:** HTML5, CSS3 (with animations & responsiveness)\n- **JavaScript:** Vanilla ES6+\n- **Data:** JSON-based question storage\n\n### 📁 Project Structure\n```\n📦 Quizer-A-quiz-platform\n├── 📂 assets            # Icons, images, media\n├── 📂 css               # Stylesheets for layout, animations\n├── 📂 js                # Core quiz logic and UI interactivity\n├── 📂 data              # JSON question bank\n├── 📄 index.html        # Entry point\n└── 📄 README.md         # Project documentation\n```\n\n### 🎯 How to Use\n1️⃣ Choose a quiz category or class  \n2️⃣ Answer each question — watch the colors change live  \n3️⃣ Submit quiz to see your score instantly  \n4️⃣ Restart to try with a fresh random set!\n\n### 🐞 Known Issues & Fixes\n- 🔹 Question loading bug — fixed JSON load sequence\n- 🔹 Red/green feedback issue — corrected event binding logic\n- 🔹 Submit button bug — now disables after submission\n\n🌟 Made with ❤️ by **Lakshita Sisodia** — perfect for personal learning platforms, mini ed-tech tools, or general fun quizzes.",
+  "technologies": ["HTML", "CSS", "JavaScript", "JSON"]
+},
+{
+  "id": "lotherhey_spotify_clone",
+  "title": "🎵 LotherHey – Spotify Clone",
+  "type": "project",
+  "short_description": "A sleek music player web app with smooth animations, dynamic track display, and responsive UI.",
+  "long_description": "🎵 **LotherHey – Spotify Clone** is a visually polished music player web app that mimics the behavior of modern music platforms. With animated transitions, dynamic metadata rendering, and smooth controls, it's crafted using just HTML, CSS, and JavaScript — no libraries!\n\n### 🚀 Features\n- ✅ Real-time album art and track metadata\n- ✅ Interactive play/pause, next/previous buttons\n- ✅ Smooth UI animations and hover effects\n- ✅ Fully responsive layout across devices\n- ✅ Built with the native Audio API — no frameworks\n\n### 🛠️ Tech Stack\n- **Frontend:** HTML5, CSS3 (Animations, Responsive Design), JavaScript (ES6+)\n- **Media Handling:** JavaScript Audio API\n- **No frameworks used** — pure vanilla JavaScript!\n\n### 📁 Project Structure\n```\n📦 Music-Player-WebApp\n├── 📂 assets          # Icons, images, album covers, media\n├── 📂 css             # Styling, animations, layout\n├── 📂 js              # Playback control and UI logic\n├── 📄 index.html      # Main app layout\n└── 📄 README.md       # Documentation\n```\n\n### 🎯 How to Use\n1️⃣ Open the app and click any song tile to begin playback  \n2️⃣ Use the play/pause and navigation buttons to control music  \n3️⃣ Enjoy dynamic transitions, animated cards, and a smooth UI 🎶\n\n### 🐞 Known Issues & Fixes\n- 🔹 Fixed unknown track metadata bug\n- 🔹 Adjusted previous button skip behavior\n- 🔹 Ensured correct indexing on last track load\n\n🌟 Built with ❤️ by **Lakshita Sisodia** — for frontend joy, music vibes, and smooth web experiences.",
+  "technologies": ["HTML", "CSS", "JavaScript", "Audio API", "Responsive Design"]
+}
+
+
+]

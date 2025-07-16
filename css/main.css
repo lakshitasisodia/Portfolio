@@ -1,0 +1,268 @@
+main {
+  display: flex;
+  gap: 30px;
+  padding: 20px 5%;
+  height: calc(100vh - 120px);
+  overflow: hidden;
+}
+h1{
+    font-size: 3.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+/* Left Section */
+.left {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.left header {
+  display: flex;
+  gap: 20px;
+  height: 52%;
+}
+.left footer{
+    height: 45%;
+}
+
+.left .work,
+.left .photo {
+  background-color: rgba(255, 255, 255, 0.08);
+  height: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  transition: box-shadow 0.8s ease, transform 0.8s ease;
+}
+
+.left .work {
+  width: 60%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.left .photo {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .photo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.left .photo-box img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.left .photo-box .icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .photo-box .icons img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+.left .photo-box .icons img:hover {
+  transform: scale(1.1);
+}
+
+.left .projects {
+  background-color: rgba(255, 255, 255, 0.08);
+  height: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  transition: box-shadow 0.8s ease, transform 0.8s ease;
+}
+
+.left .work:hover,
+.left .photo:hover,
+.left .projects:hover {
+  box-shadow: 0 0 15px #92929244;
+  transform: scale(1.02);
+}
+
+/* Work-box scroll area */
+.left .work-box {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  height: 90%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.3s ease;
+}
+
+.left .work-box:hover {
+  scrollbar-color: #2a2a2a #0d0d0d;
+}
+
+/* Work items */
+.left .work-box-item {
+  min-width: 350px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.left .work-box-item h2{
+  padding: 5px;
+}
+.left .work-box-item p{
+  padding: 5px;
+  color: #aaaaaa;
+}
+.projects {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 20px;
+  transition: box-shadow 0.8s ease, transform 0.8s ease;
+  overflow-x: auto;
+}
+
+.projects:hover {
+  box-shadow: 0 0 15px #92929244;
+  transform: scale(1.02);
+}
+
+.projects h2 {
+  margin-bottom: 12px;
+  font-size: 2.2rem;
+  color: #ccc;
+  font-weight: 600;
+}
+
+.projects pre {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 16px;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  color: #f1f1f1;
+  line-height: 1.6;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+
+/* Right Section */
+.right {
+  flex: 1.2;
+  height: 100%;
+  overflow: hidden;
+}
+
+.imp-projects {
+  background-color: rgba(255, 255, 255, 0.08);
+  height: 100%;
+  min-height: 300px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  overflow-y: auto;
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.3s ease;
+}
+
+.imp-projects:hover {
+  scrollbar-color: #2a2a2a #0d0d0d;
+  box-shadow: 0 20px 60px rgba(146, 146, 146, 0.2);
+}
+
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.151);
+  padding: 20px;
+  border-radius: 5px;
+}
+.project-box h2{
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+.project-box p{
+    padding: 10px;
+    color: #aaaaaa;
+}
+
+/* WebKit Scrollbar Styling (Fade-in) */
+::-webkit-scrollbar,
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+:hover::-webkit-scrollbar,
+:hover::-webkit-scrollbar {
+  opacity: 1;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  margin-block: 8px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
+  border-radius: 20px;
+  border: 2px solid #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(145deg, #444, #222);
+}
+
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+/* Firefox Scrollbar Fallback */
+.left .work-box,
+.imp-projects {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* On hover, show scrollbar color in Firefox */
+.left .work-box:hover,
+.imp-projects:hover {
+  scrollbar-color: #2a2a2a #0d0d0d;
+}

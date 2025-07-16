@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lakshita Sisodia — Web Developer, Designer & AI Explorer</title>
+
+  <!-- ✅ Primary Meta Tags -->
+  <meta name="title" content="Lakshita Sisodia — Web Developer, Designer & AI Explorer">
+  <meta name="description" content="Official portfolio of Lakshita Sisodia — showcasing work in web development, AI tools, voice assistants, and design. Built with a glassmorphic UI and dynamic content.">
+  <meta name="keywords" content="Lakshita Sisodia, web developer, AI projects, portfolio, frontend developer, glassmorphism, Python, voice assistant, Kendra, graphical proximity">
+  <meta name="author" content="Lakshita Sisodia">
+  <meta name="robots" content="index, follow">
+
+  <!-- ✅ Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:title" content="Lakshita Sisodia — Web Developer, Designer & AI Explorer">
+  <meta property="og:description" content="Explore the innovative portfolio of Lakshita Sisodia — Full Stack, AI tools, and voice assistants.">
+  <meta property="og:image" content="https://yourdomain.com/og-image.png"> <!-- Replace with actual image -->
+
+  <!-- ✅ Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourdomain.com/">
+  <meta property="twitter:title" content="Lakshita Sisodia — Web Developer, Designer & AI Explorer">
+  <meta property="twitter:description" content="Explore the innovative portfolio of Lakshita Sisodia — Full Stack, AI tools, and voice assistants.">
+  <meta property="twitter:image" content="https://yourdomain.com/og-image.png"> <!-- Replace with actual image -->
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- ✅ Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lakshita Sisodia",
+    "url": "https://yourdomain.com",
+    "sameAs": [
+      "https://www.instagram.com/graphical_proximity/",
+      "https://x.com/Grap_Proximity",
+      "https://linktr.ee/graphicalproximity"
+    ],
+    "jobTitle": "Web Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Graphical Proximity"
+    }
+  }
+  </script>
+
+  <!-- ✅ Styles & Fonts -->
+  <link rel="stylesheet" href="/css/nav.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/mediaquery.css">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Manrope&display=swap" rel="stylesheet" />
+
+  <!-- ✅ Optional Basic Styles -->
+</head>
+
+  <body>
+    <nav class="animated-box2">
+      <div class="navleft">
+        <span><a href="/index.html">Home</a></span>
+        <div class="tooltip">Go Back</div>
+        <span id="fireToggle" class="mobile-fire">🔥</span>
+      </div>
+      <!-- 🔥 icon for mobile, hidden on desktop -->
+
+      <div class="navright">
+        <ul>
+          <li>
+            <a href="">About</a>
+            <div class="tooltip">About Us</div>
+          </li>
+          <li>
+            <a href="">Socials</a>
+            <div class="tooltip">Social Links</div>
+          </li>
+          <li>
+            <a href="">Contact</a>
+            <div class="tooltip">Contact Us</div>
+          </li>
+          <li class="img-tooltip">
+            <a href=""><img src="/gp.png" alt="Logo" /></a>
+            <div class="tooltip">Testimonial</div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="left">
+        <header>
+          <div class="work animated-box">
+            <h1>Work</h1>
+            <div class="work-box">
+              <!-- <div class="work-box-item" id="job1">
+                <h2>Heading</h2>
+                <p>Description</p>
+              </div> -->
+              
+            </div>
+          </div>
+          <div class="photo animated-box">
+            <div class="photo-box">
+              <img src="/profile.jpeg" alt="Profile" />
+              <div class="icons">
+                <a href="https://x.com/Grap_Proximity?t=tQsxmssiSyy-X_6diaivdw&s=08"><img src="/twitter.png" alt="Twitter" /></a>
+                <a href="https://linktr.ee/graphicalproximity"><img src="/letter-g.png" alt="Linktree" /></a>
+                <a href="https://www.instagram.com/graphical_proximity/"><img src="/instagram.png" alt="Instagram" /></a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+            <footer>
+      <div class="projects animated-box">
+        <h2><a href="/project.html">📦 Projects</a></h2>
+        <pre><code class="project-list">
+📦 Projects
+├── <a href="/project.html">🎙 Kendra AI Assistant</a> ──> <a href="/project.html">📊 Student Reservation System</a> ──> <a href="/project.html">🧠 Git + Python Tooling</a>
+├── <a href="/project.html">🧠 AI Image Generator</a> ──> <a href="/project.html">💬 Chatbot</a> ──> <a href="/project.html">🍔 Food Ordering Website</a>
+└── <a href="/project.html">🧰 10+ Small and Big Projects</a>
+        </code></pre>
+      </div>
+    </footer>
+      </div>
+
+      <div class="right">
+        <div class="imp-projects animated-box">
+          <h1>Big Project</h1>
+          <!-- <div class="project-box" id="one">
+            <h2>Heading</h2>
+            <p>Description</p>
+          </div> -->
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+      // Show/hide the fire icon only on mobile
+      function handleFireIconDisplay() {
+        const fireIcon = document.getElementById('fireToggle');
+        if (window.innerWidth <= 600) {
+          fireIcon.style.display = 'inline-block';
+        } else {
+          fireIcon.style.display = 'none';
+        }
+      }
+      window.addEventListener('resize', handleFireIconDisplay);
+      window.addEventListener('DOMContentLoaded', handleFireIconDisplay);
+
+      // Slidebar toggle logic
+      document.getElementById('fireToggle').addEventListener('click', function() {
+        const impProjects = document.querySelector('.imp-projects');
+        if (impProjects) {
+          impProjects.classList.toggle('active');
+        }
+      });
+      // Optional: close slidebar when clicking outside or pressing ESC
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          const impProjects = document.querySelector('.imp-projects');
+          if (impProjects && impProjects.classList.contains('active')) {
+            impProjects.classList.remove('active');
+          }
+        }
+      });
+      document.addEventListener('click', function(e) {
+        const impProjects = document.querySelector('.imp-projects');
+        const fireIcon = document.getElementById('fireToggle');
+        if (
+          impProjects &&
+          impProjects.classList.contains('active') &&
+          !impProjects.contains(e.target) &&
+          e.target !== fireIcon
+        ) {
+          impProjects.classList.remove('active');
+        }
+      });
+    </script>
+  </body>
+</html>
