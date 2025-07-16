@@ -1,7 +1,10 @@
-// Determine current page
-const path = window.location.pathname;
+// Detect current path
+const path = window.location.pathname.toLowerCase();
 
-// Utility: Create a URL with query
+// ✅ Log to verify script is loading
+console.log("✅ app.js loaded");
+
+// Utility to construct query URLs
 function createQueryURL(type, id) {
   return `request.html?type=${type}&id=${id}`;
 }
@@ -9,8 +12,10 @@ function createQueryURL(type, id) {
 // ----------------------
 // 1. INDEX PAGE
 // ----------------------
-if (path.includes("index.html") || path === "/" || path === "/portfolio/") {
-  // Load Work Section
+if (path.includes("index.html") || path === "/" || path.includes("/portfolio/")) {
+  console.log("📄 index.html detected");
+
+  // 🔹 Load Work Items
   fetch("work.json")
     .then(res => res.json())
     .then(data => {
@@ -29,9 +34,10 @@ if (path.includes("index.html") || path === "/" || path === "/portfolio/") {
           workBox.appendChild(div);
         });
       }
-    });
+    })
+    .catch(err => console.error("❌ Error loading work.json:", err));
 
-  // Load Big Projects
+  // 🔹 Load Big Projects
   fetch("project.json")
     .then(res => res.json())
     .then(data => {
@@ -51,13 +57,16 @@ if (path.includes("index.html") || path === "/" || path === "/portfolio/") {
             impBox.appendChild(div);
           });
       }
-    });
+    })
+    .catch(err => console.error("❌ Error loading project.json:", err));
 }
 
 // ----------------------
 // 2. PROJECT PAGE
 // ----------------------
 if (path.includes("project.html")) {
+  console.log("📦 project.html detected");
+
   fetch("project.json")
     .then(res => res.json())
     .then(data => {
@@ -80,13 +89,16 @@ if (path.includes("project.html")) {
           projectHolder.appendChild(div);
         });
       }
-    });
+    })
+    .catch(err => console.error("❌ Error loading project.json:", err));
 }
 
 // ----------------------
 // 3. REQUEST PAGE
 // ----------------------
 if (path.includes("request.html")) {
+  console.log("📄 request.html detected");
+
   const params = new URLSearchParams(window.location.search);
   const type = params.get("type");
   const id = params.get("id");
@@ -97,7 +109,10 @@ if (path.includes("request.html")) {
     .then(res => res.json())
     .then(data => {
       const item = data.find(entry => entry.id === id);
-      if (!item) return;
+      if (!item) {
+        console.warn("⚠️ No matching item found for id:", id);
+        return;
+      }
 
       const container = document.createElement("div");
       container.className = "request-container";
@@ -111,5 +126,6 @@ if (path.includes("request.html")) {
 
       document.body.innerHTML = "";
       document.body.appendChild(container);
-    });
+    })
+    .catch(err => console.error(`❌ Error loading ${jsonPath}:`, err));
 }
