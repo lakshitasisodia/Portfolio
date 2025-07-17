@@ -1,0 +1,108 @@
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  padding-top: 120px;
+}
+
+main {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 5%;
+  height: calc(100vh - 120px);
+}
+
+/* Layout */
+.request-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: 90%;
+}
+
+/* Request Card */
+.request-card {
+  background: black;
+  color: #1a1a1a;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  animation: fadeIn 0.4s ease;
+}
+
+/* Title */
+.request-card h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Markdown */
+.request-card .description h2,
+.request-card .description h3 {
+  margin-top: 1em;
+  font-size: 1.7rem;
+  color: #333;
+}
+
+.request-card .description p {
+  margin: 12px 0;
+}
+
+.request-card .description ul {
+  margin: 20px;
+  padding-left: 20px;
+}
+
+.request-card .description code,
+.request-card .description pre {
+  background-color: rgb(255, 253, 253);
+  color: black;
+  padding: 4px 8px;
+  font-family: "Courier New", monospace;
+  border-radius: 5px;
+  width: 70%;
+  margin-top: 15px;
+}
+
+/* Badge Links */
+.cert-link {
+  display: inline-block;
+  background-color: #1e90ff;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.cert-link:hover {
+  background-color: #0077cc;
+}
+
+/* Error */
+.error {
+  color: crimson;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
